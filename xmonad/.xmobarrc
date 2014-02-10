@@ -1,15 +1,17 @@
-Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
-       , bgColor = "black"
-       , fgColor = "grey"
+Config { font = "xft:inconsolata:size=12:antialias=true"
+       , bgColor = "#002b36"
+       , fgColor = "#657b83"
        , position = Top
+       , lowerOnStart = True
        , commands = [ Run Weather "KOAK" ["-t"," <tempF>F","-L","64","-H","77","--normal","green","--high","red","--low","lightblue"] 36000
+       	 	    , Run Network "wlp3s0" ["-L","0","-H","32","--normal","green","--high","red"] 10
                     , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
-                    , Run Swap [] 10
-                    , Run Date "%a %b %_d %l:%M" "date" 10
+                    , Run Date "<fc=#93a1a1>%a %b %_d %Y %H:%M</fc>" "date" 10
+                    , Run DiskIO [("/", "IO: <total>"), ("sda4", "<total>")] [] 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap%    <fc=#ee9a00>%date%</fc> | %KOAK%"
+       , template = "%StdinReader% }{ %cpu%  %memory%  %wlp3s0%  %diskio%  %date% | %KOAK%"
        }
