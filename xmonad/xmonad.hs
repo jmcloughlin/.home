@@ -10,6 +10,7 @@ main = do
     xmonad $ defaultConfig
         { manageHook = manageDocks <+> manageHook defaultConfig
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
+        , terminal = "urxvt"
 	, modMask = mod4Mask
 	, logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
