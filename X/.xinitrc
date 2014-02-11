@@ -1,3 +1,3 @@
 xsetroot -cursor_name left_ptr
-[[ -f ~/.Xresources ]] && xrdb ~/.Xresources
+[[ -f ~/.home/X/.Xresources ]] && xrdb ~/.home/X/.Xresources
 exec xmonad
