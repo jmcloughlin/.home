@@ -1,0 +1,4 @@
+lrwxrwxrwx  1 jmcl users    18 Feb  9 21:18 .emacs -> .home/emacs/.emacs
+lrwxrwxrwx  1 jmcl users    16 Feb 10 16:06 .xinitrc -> .home/X/.xinitrc
+lrwxrwxrwx  1 jmcl users    12 Feb 10 16:01 .xmonad -> .home/xmonad
+lrwxrwxrwx  1 jmcl users    44 Feb  9 22:28 .zshrc -> .home/oh-my-zsh/templates/zshrc.zsh-template
