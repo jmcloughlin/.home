@@ -52,6 +52,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export DEV=$HOME/devel
+export PYTHONPATH=$PYTHONPATH:$DEV/meva:$DEV/daily:$DEV/am2:$DEV/econ:$DEV/bottleneck:$DEV/la
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions

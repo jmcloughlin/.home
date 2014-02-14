@@ -1,0 +1,21 @@
+gcc-fortran
+hdf5
+python2
+python2-pip
+
+------- AUR--------
+
+atlas / lapack
+
+------------------------- PIP -----------------------
+
+Cython
+ipython
+numpy
+matplotlib
+h5py
+scipy
+bottleneck
+la
+flake8
+cvxopt
